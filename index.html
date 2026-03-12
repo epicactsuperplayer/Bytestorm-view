@@ -6,7 +6,6 @@
     <link rel="icon" type="image/svg+xml" href="https://i.imgur.com/NLz6Jfd.png">
 <div style="position:fixed;top:15px;left:15px;z-index:9999;font-family:monospace;">
 
-  <!-- Hamburger Button -->
   <div onclick="toggleNav()" style="
     cursor:pointer;
     background:#2b2a2a;
@@ -18,7 +17,31 @@
     user-select:none;
   ">&#9776;</div>
 
-  <!-- Dropdown Menu -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAY49sWaN-DSKV10uyBB3CeOiABLCtFrSI",
+    authDomain: "bytestorm-friebase-server.firebaseapp.com",
+    databaseURL: "https://bytestorm-friebase-server-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "bytestorm-friebase-server",
+    storageBucket: "bytestorm-friebase-server.firebasestorage.app",
+    messagingSenderId: "400056781433",
+    appId: "1:400056781433:web:aab98f18df3f6b7c7f62a8",
+    measurementId: "G-9LWS8222EL"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  
   <div id="byteNav" style="
     display:none;
     flex-direction:column;
@@ -48,9 +71,6 @@
     nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
   }
 </script>
-
-  firebase=ekosecuruty
-  v=spf1 include:_spf.firebasemail.com ~all
 
 <script>
   function toggleNav() {
@@ -440,6 +460,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
